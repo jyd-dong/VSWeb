@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米商城</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <style>
+        .dress {
+            margin-top: 30px;
+            /* background-color: orange; */
+            /* height: 1000px; */
+        }
+        .dress .header {
+            height: 58px;
+            line-height: 58px;
+        }
+        .dress .header .left-area {
+            float: left;
+        }
+        .dress .header .left-area .title{
+            font-weight: 200;
+        }
+        .dress .header .right-area {
+            float: right;
+            font-size: 14px;
+        }
+        .dress .header .right-area .item {
+            margin-left: 15px;
+        }
+        .dress .header .right-area .item:hover,
+        .dress .header .right-area .item.active{
+            padding: 3px 0;
+            color: red;
+            border-bottom: 2px solid red;
+        
+        }
+        .dress .list {
+            margin-right: -14px;
+            overflow: hidden;/*或者使用clear_fix*/
+        }
+        .dress .list .item {
+            float: left;
+            width: 234px;
+            height: 300px;
+            /* text-align: center; */
+            margin-right: 14px;
+            margin-bottom: 14px;
+            background-color: #fff;
+            animation: all  0.2s linear;
+        }
+        .dress .list  .item .img-dress {
+            width: 160px;
+            /* height: 160px; */
+            margin: 0 auto 18px;
+        }
+        .dress .list  .item .img-dress img {
+            width: 160px;
+            height: 160px;
+        }
+        .dress .list  .item.item1 {
+            height: 614px;
+        }
+        .dress .list .item.item9,
+        .dress .list .item.item10 {
+            height: 143px;
+        }
+        .dress .list .item:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
+        .dress .list .item a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .dress .list  .item .dress-name {
+            margin: 0 10px 2px;
+        }
+        .dress .list  .item .describe {
+            overflow: hidden;
+            font-size: 12px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #b0b0b0;
+            margin: 0 10px 10px;
+        }
+        .dress .list  .item .price {
+            margin: 0 10px 14px;
+        }
+        .dress .list  .item .price .old-price {
+            color: #666;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div class="dress mi_wrapper">
+        <div class="header  clear_fix">
+            <div class="left-area">
+                <h3 class="title">智能穿戴</h3>
+            </div>
+            <div class="right-area">
+                <a class="item active hot" href="#">热门</a>
+                <a class="item info" href="#">穿戴</a>
+            </div>
+        </div>
+        <div>
+            <ul class="list">
+                <li class="item item1">
+                    <a href="#">
+                    <img src="./img/dress_01.webp" alt="xiaomiWatchS2">
+                </a></li>
+                <li class="item item2">
+                    <a href="#">
+                    <div class="img-dress">
+                        <img src="./img/dress_02.webp" alt="">
+                    </div>
+                    <div class="dress-name">Redmi Buds 3</div>
+                    <div class="describe">轻巧半入耳|通话降噪|20小时长续航</div>
+                    <div class="price">
+                        <span class="new-price">149元</span>
+                        <span class="old-price">199元</span>
+                    </div>
+                </a></li>
+                <li class="item item3"><a href="#">3</a></li>
+                <li class="item item4"><a href="#">4</a></li>
+                <li class="item item5"><a href="#">5</a></li>
+                <li class="item item6"><a href="#">6</a></li>
+                <li class="item item7"><a href="#">7</a></li>
+                <li class="item item8"><a href="#">8</a></li>
+                <li class="item item9"><a href="#">9</a></li>
+                <li class="item item10"><a href="#">10</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
