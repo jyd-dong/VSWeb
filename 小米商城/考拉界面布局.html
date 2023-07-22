@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>考拉界面布局</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <style>
+    .sport {
+      margin-top: 20px;
+      /* background-color: orange; */
+    }
+    .sport .item {
+      float: left;
+      height: 541px;
+    }
+    .sport .item.left {
+      width: 330px;
+      background-color: skyblue;
+    }
+    .sport .item.center {
+      width: 550px;
+      /* background-color: red; */
+    }
+    .sport .item.right {
+      width: 220px;
+      /* background-color: burlywood; */
+    }
+    .sport .center .center-item {
+      float: left;
+      box-sizing: border-box;
+      width: 275px;
+      height: 271px;
+      border: 1px solid #000;
+      border-left: none;
+
+      /* background-color: rgb(177, 171, 171); */
+    }
+    .sport .center .center-item:nth-last-child(-n+2) {
+      margin-top: -1px;
+    }
+    .sport .item.right {
+      width: 220px;
+    }
+    .sport .right .item {
+      float: left;
+      width: 220px;
+      height: 121px;
+      box-sizing: border-box;
+      border: 1px solid #000;
+      border-left: none;
+      margin-top: -1px;
+      /* background-color: #f00; */
+    }
+    .sport .right .item.header {
+      height: 61px;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="kl_wrapper sport clear_fix">
+    <div class="item left"></div>
+    <div class="item center">
+      <div class="center-item">1</div>
+      <div class="center-item">2</div>
+      <div class="center-item">3</div>
+      <div class="center-item">4</div>
+    </div>
+    <div class="item right clear_fix">
+      <div class="item header"></div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+  </div>
+</body>
+</html>
